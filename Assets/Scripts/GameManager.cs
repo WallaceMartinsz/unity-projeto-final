@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    
-
     public void Menu()
     {
         SceneManager.LoadScene(0);
@@ -14,11 +12,16 @@ public class GameManager : MonoBehaviour
 
     public void Options()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(3);
     }
 
     public void Exit()
     {
         Application.Quit();
+    }
+
+    public void NewGame()
+    {
+        SceneManager.LoadScene(1);
     }
 }
